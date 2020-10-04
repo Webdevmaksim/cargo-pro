@@ -9,7 +9,7 @@ const htmlmin = require('gulp-htmlmin');
 
 // Static server
 function bs() {
-    minсss();
+    // minсss();
     compress();
     // minify_h();
     serveSass();
