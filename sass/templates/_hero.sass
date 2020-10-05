@@ -1,11 +1,49 @@
 .header
 	background-color: $light
 	min-height: 3.57rem
-	border: 1px solid red
-	display: flex
-	align-items: center
-	justify-content: space-between
 	position: fixed
 	top: 0
 	left: 0
 	width: 100%
+	&__wrapper
+		display: flex
+		align-items: center
+		// justify-content: space-between
+	&__logo
+		margin-right: 3.78rem
+		transition: all 0.3s
+		&:hover
+			transform: translateY(0.5rem)
+	&__nav
+		margin-right: 3.92rem
+	&__phone
+		font-size: 1.28rem
+		color: $black
+		text-decoration: none
+.nav
+	display: flex
+	&__link
+		text-decoration: none
+		color: $black
+		font-size: 1rem
+		margin-right: 2.28rem
+		position: relative
+		&:hover
+			&::before
+				width: 120%
+		&::before
+			position: absolute
+			content: ''
+			display: block
+			z-index: -1
+			width: 60%
+			height: 1.85rem
+			background-color: $before
+			margin-top: -0.5rem
+			margin-left: -0.64rem
+			transition: all 0.3s
+		&:last-child
+			margin-right: 0
+.hero
+	background-color: $before
+	min-height: 80vh

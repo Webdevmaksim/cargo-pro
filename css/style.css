@@ -318,11 +318,49 @@ html {
 .header {
   background-color: #FFFFFF;
   min-height: 3.57rem;
-  border: 1px solid red;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%; }
+  .header__wrapper {
+    display: flex;
+    align-items: center; }
+  .header__logo {
+    margin-right: 3.78rem;
+    transition: all 0.3s; }
+    .header__logo:hover {
+      transform: translateY(0.5rem); }
+  .header__nav {
+    margin-right: 3.92rem; }
+  .header__phone {
+    font-size: 1.28rem;
+    color: #000000;
+    text-decoration: none; }
+
+.nav {
+  display: flex; }
+  .nav__link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+    margin-right: 2.28rem;
+    position: relative; }
+    .nav__link:hover::before {
+      width: 120%; }
+    .nav__link::before {
+      position: absolute;
+      content: '';
+      display: block;
+      z-index: -1;
+      width: 60%;
+      height: 1.85rem;
+      background-color: #EFF7F9;
+      margin-top: -0.5rem;
+      margin-left: -0.64rem;
+      transition: all 0.3s; }
+    .nav__link:last-child {
+      margin-right: 0; }
+
+.hero {
+  background-color: #EFF7F9;
+  min-height: 80vh; }

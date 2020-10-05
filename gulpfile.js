@@ -28,6 +28,7 @@ function bs() {
     watch("./sass/**/*.scss", serveSass);
     watch("./php/*.php").on('change', browserSync.reload);
 };
+
 function compress(){
     return src(['./js/*.js', '!./js/*.min.js'])
     .pipe(minify({
