@@ -6,12 +6,15 @@ const sass  = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const minify = require('gulp-minify');
 const htmlmin = require('gulp-htmlmin');
+const tinypng = require('gulp-tinypng-compress');
+
 
 // Static server
 function bs() {
     // minсss();
-    compress();
+    // compress();
     // minify_h();
+    // tinyPic();
     serveSass();
     browserSync.init({
         server: {
@@ -33,18 +36,27 @@ function compress(){
         },
         ignoreFiles: ['-min.js']
     }))
-    .pipe(dest('js'));
+    .pipe(dest('./dist/js'));
 };
 
 function minify_h () {
     return src(['./*.html', '!./*.min.html'])
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(dest('./'));
+    
+    .pipe(dest('./dist'));
+};
+function tinyPic (){
+    return src(['./img/**/*.{png,jpg,jpeg,webp}'])
+        .pipe(tinypng({
+            key: 'cWbQ2Z7rrw0ZbpF85lKP4jZF6mqC0rdc',
+            sigFile: 'images/.tinypng-sigs',
+            log: true
+        }))
+        .pipe(dest('./dist/img'));
 };
 
-
 // Task to minify css using package cleanCSs
-    function minсss() {
+function minсss() {
      // Folder with files to minify
      return src(['./css/*.css', '!./css/*.min.css'])
      //The method pipe() allow you to chain multiple tasks together 
@@ -54,7 +66,7 @@ function minify_h () {
     }))
     .pipe(cleanCSS())
     //I define the destination of the minified files with the method dest
-    .pipe(dest('css'));
+    .pipe(dest('./dist/css'));
 };
 
 function serveSass() {
