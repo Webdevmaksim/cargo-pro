@@ -46,4 +46,57 @@
 			margin-right: 0
 .hero
 	background-color: $before
-	min-height: 80vh
+	padding-top: 9.42rem
+	padding-bottom: 4.85rem
+	&__row
+		display: flex
+		flex-wrap: wrap
+	&__col
+		&:first-child
+			margin-right: auto
+		&:last-child
+			margin-top: 3rem
+	&__title
+		max-width: 42.28rem
+		line-height: 3rem
+		font-weight: 700
+		font-size: 2.57rem
+		margin-bottom: 1.42rem
+		&--blue
+			color: $main-blue
+			font-weight: 400
+	&__text
+		max-width: 42rem
+		line-height: 1.5rem
+		font-weight: 300
+		color: $main-blue
+		font-size: 1.28rem
+		margin-bottom: 1.42rem
+.hero-form
+	display: flex
+	flex-wrap: wrap
+	max-width: 24.64rem
+	&__title
+		border: none
+		resize: none
+		overflow: hidden
+		background-color: inherit
+		pointer-events: none
+		&::placeholder
+			color: black
+	&__input
+		width: 98%
+		border: none
+		background-color: inherit
+		border-bottom: 1px solid $light-blue
+		padding-bottom: 1rem
+		outline: none
+		&::placeholder
+			color: $light-blue
+			font-size: 1.28rem
+			font-weight: 300
+	&__input-group
+		flex-basis: 100%
+		margin-bottom: 2.071rem
+	&__button
+		flex-basis: 100% 

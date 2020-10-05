@@ -311,9 +311,22 @@ body {
 html {
   font-size: 14px; }
 
+img {
+  max-width: 100%; }
+
 .container {
   max-width: 1200px;
   margin: auto; }
+
+.button {
+  color: #FFFFFF;
+  background-color: #014D83;
+  border: none;
+  padding-top: 1.28rem;
+  padding-bottom: 1.28rem;
+  font-weight: 700;
+  font-size: 1.28rem;
+  outline: none; }
 
 .header {
   background-color: #FFFFFF;
@@ -363,4 +376,69 @@ html {
 
 .hero {
   background-color: #EFF7F9;
-  min-height: 80vh; }
+  padding-top: 9.42rem;
+  padding-bottom: 4.85rem; }
+  .hero__row {
+    display: flex;
+    flex-wrap: wrap; }
+  .hero__col:first-child {
+    margin-right: auto; }
+  .hero__col:last-child {
+    margin-top: 3rem; }
+  .hero__title {
+    max-width: 42.28rem;
+    line-height: 3rem;
+    font-weight: 700;
+    font-size: 2.57rem;
+    margin-bottom: 1.42rem; }
+    .hero__title--blue {
+      color: #014D83;
+      font-weight: 400; }
+  .hero__text {
+    max-width: 42rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: #014D83;
+    font-size: 1.28rem;
+    margin-bottom: 1.42rem; }
+
+.hero-form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 24.64rem; }
+  .hero-form__title {
+    border: none;
+    resize: none;
+    overflow: hidden;
+    background-color: inherit;
+    pointer-events: none; }
+    .hero-form__title::-moz-placeholder {
+      color: black; }
+    .hero-form__title:-ms-input-placeholder {
+      color: black; }
+    .hero-form__title::placeholder {
+      color: black; }
+  .hero-form__input {
+    width: 98%;
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid #A9C3D5;
+    padding-bottom: 1rem;
+    outline: none; }
+    .hero-form__input::-moz-placeholder {
+      color: #A9C3D5;
+      font-size: 1.28rem;
+      font-weight: 300; }
+    .hero-form__input:-ms-input-placeholder {
+      color: #A9C3D5;
+      font-size: 1.28rem;
+      font-weight: 300; }
+    .hero-form__input::placeholder {
+      color: #A9C3D5;
+      font-size: 1.28rem;
+      font-weight: 300; }
+  .hero-form__input-group {
+    flex-basis: 100%;
+    margin-bottom: 2.071rem; }
+  .hero-form__button {
+    flex-basis: 100%; }
