@@ -7,7 +7,6 @@
 		flex-wrap: wrap
 	&__col
 		flex-basis: 50%
-
 	&__price
 		background-color: $light
 		border-left: 10px solid $main-blue
@@ -33,6 +32,35 @@
 		line-height: 2rem
 		max-width: 29rem
 		margin: 0
+	&__feedback
+		padding-left: 1.5rem
+
+	&__feedback-title
+		text-align: right
+		margin-bottom: 2.6rem
+.feedback
+	&__header
+		display: flex
+		align-items: center
+		padding-top: 1rem
+		padding-left: 1rem
+	&__title-block
+		display: flex
+		flex-direction: column	
+	&__img
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 50%
+		overflow: hidden
+		width: 6.21rem
+		height: 6.21rem
+		margin-right: 1.5rem
+		& img
+			transform: scale(1.1)
+	&__description
+		padding-left: 1rem
+		max-width: 30rem
 .price-block__title
 	flex-basis: 100%
 	margin-bottom: 2.71rem
@@ -46,3 +74,19 @@
 	top: 50%
 	right: 1.5rem
 	transform: translateY(-50%)
+.swiper-scrollbar-drag
+	background-color: $main-blue
+	height: 5rem !important
+	border-radius: 0
+	&:hover
+		cursor: pointer
+.swiper-scrollbar
+	width: 1rem !important
+	border-radius: 0
+	height: 100% !important
+.swiper-container
+	max-height: 43.5rem
+	height: 100% !important
+	background-color: $light !important
+
+
