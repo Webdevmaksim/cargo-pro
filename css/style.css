@@ -328,6 +328,12 @@ img {
   font-size: 1.28rem;
   outline: none; }
 
+.block-title {
+  font-weight: 900;
+  font-size: 1.71rem;
+  color: #014D83;
+  margin: 0; }
+
 .header {
   background-color: #FFFFFF;
   min-height: 3.57rem;
@@ -486,4 +492,55 @@ img {
     font-weight: 300;
     color: #EFF7F9;
     font-size: 1.71rem;
-    line-height: 2rem; }
+    line-height: 2rem;
+    max-width: 22.7rem; }
+
+.about {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  background-color: #E5E5E5; }
+  .about__row {
+    display: flex;
+    flex-wrap: wrap; }
+  .about__col {
+    flex-basis: 50%; }
+  .about__price {
+    background-color: #FFFFFF;
+    border-left: 10px solid #014D83;
+    flex-basis: 100%;
+    margin-bottom: 2.42rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    position: relative; }
+    .about__price:last-child {
+      margin-bottom: 0; }
+  .about__price-block {
+    display: flex;
+    flex-wrap: wrap; }
+  .about__item {
+    color: #000000;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3rem; }
+  .about__description {
+    font-weight: 300;
+    font-size: 1.71rem;
+    line-height: 2rem;
+    max-width: 29rem;
+    margin: 0; }
+
+.price-block__title {
+  flex-basis: 100%;
+  margin-bottom: 2.71rem; }
+
+.item__price {
+  color: #014D83;
+  font-weight: 900;
+  line-height: 2rem;
+  font-size: 1.72rem;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%); }
