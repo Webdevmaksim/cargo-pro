@@ -13,4 +13,13 @@ $(document).ready(function($) {
 	  },
 	});
 	swiper.mousewheel.enable();
+
+	var trucks = new Swiper('.extra__car-slider', {
+		slidesPerView: 1,
+		scrollbar: {
+        	el: '.extra__scrollbar',
+        	hide: false,
+        	draggable: true,
+	  },
+	});
 });

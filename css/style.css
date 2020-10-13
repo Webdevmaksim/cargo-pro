@@ -814,7 +814,8 @@ button.swiper-pagination-bullet {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 51; }
   .header__wrapper {
     display: flex;
     align-items: center; }
@@ -1013,7 +1014,8 @@ button.swiper-pagination-bullet {
   display: flex;
   align-items: center;
   padding-top: 1rem;
-  padding-left: 1rem; }
+  padding-left: 1rem;
+  margin-bottom: 1.42rem; }
 
 .feedback__title-block {
   display: flex;
@@ -1031,9 +1033,15 @@ button.swiper-pagination-bullet {
   .feedback__img img {
     transform: scale(1.1); }
 
+.feedback__slide {
+  margin-bottom: 2rem; }
+
 .feedback__description {
-  padding-left: 1rem;
-  max-width: 30rem; }
+  padding-left: 1.5rem;
+  max-width: 37rem;
+  margin: 0;
+  font-size: 1.71rem;
+  line-height: 2rem; }
 
 .feedback__slider-container {
   position: relative;
@@ -1041,6 +1049,22 @@ button.swiper-pagination-bullet {
   background-color: #FFFFFF;
   max-height: 100%;
   max-height: 43.3rem; }
+
+.feedback__name {
+  margin: 0;
+  line-height: 3rem;
+  font-weight: 400;
+  font-size: 2.57rem; }
+
+.feedback__case {
+  font-size: 1.71rem;
+  line-height: 2rem; }
+
+.extra__row {
+  display: flex; }
+
+.extra__col {
+  flex-basis: 50%; }
 
 .price-block__title {
   flex-basis: 100%;
