@@ -23,7 +23,7 @@
     			<a href="#" class="nav__link">Наш автопарк</a>
     			<a href="#" class="nav__link">Контакты</a>
     		</nav>
-    		<a href="tel: +7 (903) 692-29-43" class="header__phone">+7 (903) 692-29-43</a>
+    		<a href="tel:+7(903)6922943" class="header__phone">+7 (903) 692-29-43</a>
     			</div>
     		</div>
     	</header>
@@ -40,7 +40,7 @@
     					Мы перевезем Ваши вещи без головой боли. Опытные грузчики обеспечат береженую транспортировку Ваших любимых вещей прямо до машины, а водитель, пристегнув их ремнем безопасности, проведет незабываемую экскурсию до нового местожительства.
     				</p>
     				<form class="form hero-form">
-    					<textarea data-main="Оставьте заявку — и ваш переезд станет нашей заботой!" placeholder="123" name="heroTitle" id=""class="hero-form__title">
+    					<textarea data-main="Оставьте заявку — и ваш переезд станет нашей заботой!" placeholder="123" name="heroTitle" class="hero-form__title">
     						
     					</textarea>
     					<div class="hero-form__input-group">
@@ -63,9 +63,9 @@
     </main>
     <section class="section features">
     	<div class="container">
-    		<h1 class="features__title">
+    		<h2 class="features__title">
     			<span class="features__title--small">Наши</span> преимущества 
-    		</h1>
+    		</h2>
     		<div class="features__row">
 	    		<div class="features__col">
 	    			<div class="features__card">
@@ -213,7 +213,7 @@
     					<h4 class="block-title about__feedback-title">
     						Отзывы наших клиентов
     					</h4>
-    					 <div class="swiper-container">
+    					 <div class="feedback__slider-container">
 						    <div class="swiper-wrapper">
 						      <div class="swiper-slide">
 						      	<div class="feedback__header">
@@ -234,7 +234,25 @@
 						      		Была необходимость переехать с пятерки в центр, обзвонил порядка 5-ти компаний и только у CargoProService был гуманный ценник. Но как оказалось, это лучшее что есть на рынке по соотношению Цена/Качество!
 						      	</p>
 						      </div>
-						      <div class="swiper-slide">Slide 2</div>
+						      <div class="swiper-slide">
+								<div class="feedback__header">
+
+									<div class="feedback__img">
+										<img src="img/feedback/customer-2.png" alt="Клиент">
+									</div>
+									<div class="feedback__title-block">
+										<h5 class="feedback__name">
+											Панфильев Игорь
+										</h5>
+										<span class="feedbacl__case">
+											Переезд квартиры
+										</span>
+									</div>
+								</div>
+								<p class="feedback__description">
+									Был переезд квартиры и другие компании не могли составить договор на материальные ценности. С КаргоПроСервис вопросов не было, спасибо!
+								</p>
+								</div>
 						      <div class="swiper-slide">Slide 3</div>
 						      <div class="swiper-slide">Slide 4</div>
 						    </div>
@@ -248,7 +266,7 @@
     </section>
 
     <script src="js/Jquery.min.js"></script>
-    <script src="js/swiper.min.js"></script>
+    <script defer src="js/swiper.min.js"></script>
     <script defer src="js/main.js"></script>
 </body>
 </html>
