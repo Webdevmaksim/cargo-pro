@@ -5,6 +5,7 @@
 	&__row	
 		display: flex
 		flex-wrap: wrap
+		margin-bottom: 4rem
 	&__col
 		flex-basis: 50%
 	&__price
@@ -83,8 +84,52 @@
 .extra
 	&__row
 		display: flex
+	&__car-slider
+		max-width: 43rem
+		overflow: hidden
+		position: relative
 	&__col
 		flex-basis: 50%
+		&:last-child
+			padding-left: 1.5rem
+	&__scrollbar
+		height: 1.5rem
+		background-color: #E5E5E5
+	&__form
+		background-color: $light
+		padding: 0.57rem 1.5rem
+	&-form
+		&__title
+			resize: none
+			border: none
+			pointer-events: none
+			color: #014D83
+			font-size: 1.71rem
+			line-height: 2rem
+			margin-bottom: 0.85rem
+			max-width: 19rem
+			overflow: hidden
+		&__input-group
+			width: 100%	
+			margin-bottom: 0.5rem
+		&__input
+			width: 100%
+			box-sizing: border-box
+			border: none
+			font-size: 1.28rem
+			line-height: 1.5rem
+			border-bottom: 1px solid #A9C3D5
+			margin-bottom: 1.57rem
+			&::placeholder
+				color: #A9C3D5
+		&__button
+			width: 100%
+			margin-bottom: 0.7rem
+			transition: all 0.2s
+			&:hover
+				cursor: pointer
+				background-color: lighten($main-blue,7%)
+				
 
 .price-block__title
 	flex-basis: 100%

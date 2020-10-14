@@ -40,7 +40,7 @@
     					Мы перевезем Ваши вещи без головой боли. Опытные грузчики обеспечат береженую транспортировку Ваших любимых вещей прямо до машины, а водитель, пристегнув их ремнем безопасности, проведет незабываемую экскурсию до нового местожительства.
     				</p>
     				<form class="form hero-form">
-    					<textarea data-main="Оставьте заявку — и ваш переезд станет нашей заботой!" placeholder="123" name="heroTitle" class="hero-form__title">
+    					<textarea data-main="Оставьте заявку — и ваш переезд станет нашей заботой!" name="heroTitle" class="hero-form__title">
     						
     					</textarea>
     					<div class="hero-form__input-group">
@@ -264,32 +264,119 @@
 			</div>
 			<div class="extra__row">
 				<div class="extra__col">
+					<h4 class="price-block__title block-title">
+						Наш автопарк
+					</h4>
 					<div class="extra__car-slider">
-						<div class="extra__car-wrapper">
-							<div class="extra__car-slide">
-								<div class="extra__image"><img src="./img/trucks/slide-1.jpeg" alt="грузовик"></div>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="extra__car-slide">
+									<div class="extra__image"><img src="./img/trucks/slide-3.jpeg" alt="грузовик"></div>
+								</div>
 							</div>
-							<div class="extra__car-slide">
-								<div class="extra__image"><img src="./img/trucks/slide-2.jpeg" alt="грузовик"></div>
+							<div class="swiper-slide">
+								<div class="extra__car-slide">
+									<div class="extra__image"><img src="./img/trucks/slide-2.jpeg" alt="грузовик"></div>
+								</div>
 							</div>
-							<div class="extra__car-slide">
-								<div class="extra__image"><img src="./img/trucks/slide-3.jpeg" alt="грузовик"></div>
+							<div class="swiper-slide">
+								<div class="extra__car-slide">
+									<div class="extra__image"><img src="./img/trucks/slide-1.jpeg" alt="грузовик"></div>
+								</div>
 							</div>
+						</div>
+						<div class="extra__scrollbar">
+							
 						</div>
 					</div>
 				</div>
 				<!-- /.extra__col -->
 				<div class="extra__col">
-					
+					<h4 class="block-title about__feedback-title">
+						Остались вопросы?
+
+					</h4>
+					<form class="form extra__form">
+    					<textarea data-question="Оставьте заявку,          и мы вам перезвоним!"  name="extraTitle" class="extra-form__title">
+    						
+    					</textarea>
+    					<div class="extra-form__input-group">
+    						<input placeholder="Ваше имя*" class="extra-form__input" type="text">
+    					</div>
+    					<div class="extra-form__input-group">
+    						<input placeholder="Ваш телефон*" class="extra-form__input" type="text">
+    					</div>
+    					<div class="extra-form__input-group">
+    						<input placeholder="Ваш вопрос" class="extra-form__input" type="text">
+    					</div>
+    					<button class="extra-form__button button">Отправить заявку</button>
+    				</form>
 				</div>
 				<!-- /.extra__col -->
 			</div>
 			<!-- /.extra__row -->
     	</div>
     </section>
-
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__content">
+				
+				<div class="footer__col">
+					<h3 class="footer__header">
+						Контакты
+					</h3>
+					<!-- /.footer__header -->
+					<div class="footer__contacts-group">
+						<h6 class="footer__contacts-title">
+							Адрес:
+						</h6>
+						<span class="footer__item">
+							г. Ярославль ул. Свободы 87А
+						</span>
+					</div>
+					<div class="footer__contacts-group">
+						<h6 class="footer__contacts-title">
+							Время работы:
+						</h6>
+						<ul class="footer__operation-hours">
+							<li>Пн-Пт: 9:00-19:00</li>
+							<li>Сб: 10:00-19:00</li>
+							<li>Вс: выходной</li>
+						</ul>
+						
+					</div>
+					<div class="footer__contacts-group">
+						<ul class="footer__links">
+							<li>
+								<a href="tel:8(903)6922943">8 (903) 692-29-43</a>
+							</li>
+							<li>
+								<a href="tel:8(999)2342090">8 (999) 234-20-90</a>
+							</li>
+							<li>
+								<a href="mailto:info@cargoproservice.ru">info@cargoproservice.ru</a>
+							</li>
+						</ul>
+						<!-- /.footer__links -->
+					</div>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<div id="yaMap" class="map footer__map">
+						
+					</div>
+				</div>
+				<!-- /.footer__col -->
+			</div>
+			<!-- /.footer__content -->
+		</div>
+		<!-- /.container -->
+	</footer>
+	<!-- /.footer -->
     <script src="js/Jquery.min.js"></script>
-    <script defer src="js/swiper.min.js"></script>
+	<script defer src="js/swiper.min.js"></script>
+	<script defer src="https://api-maps.yandex.ru/2.1/?apikey=493af2c5-0bad-4687-b870-cb81def0a6c7&lang=ru_RU" >
+    </script>
     <script defer src="js/main.js"></script>
 </body>
 </html>
