@@ -140,7 +140,7 @@ function waitForTilesLoad(layer) {
 		  spinner.addClass('is-active');
    
 		  // Загружаем API Яндекс.Карт
-		  loadScript("https://api-maps.yandex.ru/2.1/?apikey=493af2c5-0bad-4687-b870-cb81def0a6c7&lang=ru_RU", function(){
+		  loadScript("https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;loadByRequire=1", function(){
 			 // Как только API Яндекс.Карт загрузились, сразу формируем карту и помещаем в блок с идентификатором &#34;map-yandex&#34;
 			 ymaps.load(init);
 		  });                
