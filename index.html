@@ -253,8 +253,25 @@
 									Был переезд квартиры и другие компании не могли составить договор на материальные ценности. С КаргоПроСервис вопросов не было, спасибо!
 								</p>
 								</div>
-						      <div class="swiper-slide">Slide 3</div>
-						      <div class="swiper-slide">Slide 4</div>
+						      <div class="feedback__slide swiper-slide">
+								<div class="feedback__header">
+
+									<div class="feedback__img">
+										<img src="img/feedback/customer-2.png" alt="Клиент">
+									</div>
+									<div class="feedback__title-block">
+										<h5 class="feedback__name">
+											Гжегошь Новак
+										</h5>
+										<span class="feedback__case">
+											Переезд музыкальной студии
+										</span>
+									</div>
+								</div>
+								<p class="feedback__description">
+									Был переезд студии и другие компании не могли составить договор на материальные ценности. С КаргоПроСервис вопросов не было, спасибо!
+								</p>
+							  </div>
 						    </div>
 						    <!-- Add Scrollbar -->
 						    <div class="swiper-scrollbar"></div>
@@ -362,9 +379,11 @@
 				</div>
 				<!-- /.footer__col -->
 				<div class="footer__col">
-					<div id="yaMap" class="map footer__map">
-						
-					</div>
+					<div class="ymap-container">
+						<div class="loader loader-default"></div>
+						<div id="yaMap" class="map footer__map"></div>
+					</div><!-- .ymap-container -->
+					
 				</div>
 				<!-- /.footer__col -->
 			</div>
@@ -375,8 +394,7 @@
 	<!-- /.footer -->
     <script src="js/Jquery.min.js"></script>
 	<script defer src="js/swiper.min.js"></script>
-	<script defer src="https://api-maps.yandex.ru/2.1/?apikey=493af2c5-0bad-4687-b870-cb81def0a6c7&lang=ru_RU" >
-    </script>
+	
     <script defer src="js/main.js"></script>
 </body>
 </html>
