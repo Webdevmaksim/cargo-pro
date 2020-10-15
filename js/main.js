@@ -43,7 +43,7 @@ $(document).ready(function($) {
             // Координаты центра карты.
             center: [57.626236, 39.852302],
 			zoom: 16.4,
-			controls: ['zoomControl', 'fullscreenControl']
+			controls: ['zoomControl']
 		},
 		// Создаем геообъект с типом геометрии "Точка".
         myGeoObjectTemp = new ymaps.GeoObject({
