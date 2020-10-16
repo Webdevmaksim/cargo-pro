@@ -17,17 +17,24 @@
     					</a>
     				</div>
     		<nav class="header__nav nav">
-    			<a href="#" class="nav__link">О компании</a>
-    			<a href="#" class="nav__link">Преимущества</a>
-    			<a href="#" class="nav__link">Прайс-Отзывы</a>
-    			<a href="#" class="nav__link">Наш автопарк</a>
-    			<a href="#" class="nav__link">Контакты</a>
+    			<a href="#main" class="nav__link">О компании</a>
+    			<a href="#features" class="nav__link">Преимущества</a>
+    			<a href="#prices" class="nav__link">Прайс-Отзывы</a>
+    			<a href="#cars" class="nav__link">Наш автопарк</a>
+    			<a href="#contacts" class="nav__link">Контакты</a>
     		</nav>
     		<a href="tel:+7(903)6922943" class="header__phone">+7 (903) 692-29-43</a>
-    			</div>
+			<div class="header__burger">
+				<span></span>
+			</div>
+				<div class="header__mobile-nav">
+				</div>
+				<!-- /.header__mobile-nav -->
+			</div>
+			
     		</div>
     	</header>
-    <main class="hero">
+    <main id="main" class="hero">
     	<div class="container">
     		<div class="hero__row">
     			<div class="hero__col">
@@ -61,7 +68,7 @@
     		</div>
     	</div>
     </main>
-    <section class="section features">
+    <section id="features" class="section features">
     	<div class="container">
     		<h2 class="features__title">
     			<span class="features__title--small">Наши</span> преимущества 
@@ -153,7 +160,7 @@
     		
     	</div>
     </section>
-    <section class="about">
+    <section id="prices" class="about">
     	<div class="container">
     		<div class="about__row">
     			<div class="about__col">
@@ -279,7 +286,7 @@
     				</div>
     			</div>
 			</div>
-			<div class="extra__row">
+			<div id="cars" class="extra__row">
 				<div class="extra__col">
 					<h4 class="price-block__title block-title">
 						Наш автопарк
@@ -334,7 +341,7 @@
 			<!-- /.extra__row -->
     	</div>
     </section>
-	<footer class="footer">
+	<footer id="contacts" class="footer">
 		<div class="container">
 			<div class="footer__content">
 				
@@ -394,7 +401,6 @@
 	<!-- /.footer -->
     <script src="js/Jquery.min.js"></script>
 	<script defer src="js/swiper.min.js"></script>
-	
     <script defer src="js/main.js"></script>
 </body>
 </html>
